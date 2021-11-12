@@ -44,14 +44,14 @@ Observaciones varchar(255) not null,
 );
 insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Lulu', 'Pitbull', 'Perro', 'Corte de pelo');
 insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Dogi', 'Pitbull', 'Perro', 'Corte de pelo');
-insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Perla', 'Pitbull', 'Gato', 'Corte de pelo');
+insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Perla', 'Pitbull', 'Perro', 'Corte de pelo');
 insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Pink', 'Pitbull', 'Perro', 'Corte de pelo');
-insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Lulu', 'Pitbull', 'Gato', 'Corte de pelo');
-insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Rex', 'Pitbull', 'Gato', 'Corte de pelo');
+insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Lulu', 'Pitbull', 'Perro', 'Corte de pelo');
+insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Rex', 'Pitbull', 'Perro', 'Corte de pelo');
 insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Fede', 'Pitbull', 'Perro', 'Corte de pelo');
 insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Mark', 'Pitbull', 'Perro', 'Corte de pelo');
-insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Sol', 'Pitbull', 'Gato', 'Corte de pelo');
-insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Filo', 'Pitbull', 'Gato', 'Corte de pelo');
+insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Sol', 'Pitbull', 'Perro', 'Corte de pelo');
+insert into Mascota(Nombre, Raza, Tipo, Observaciones) values('Filo', 'Pitbull', 'Perro', 'Corte de pelo');
 
 create table Ingresos(
 Id_Ingreso int identity(1,1) primary key not null,
@@ -59,16 +59,23 @@ Id_Mascota int not null,
 Fecha varchar(50) not null default getdate(),
 Observaciones varchar(255) not null
 );
-insert into Mascota(Nombre, Observaciones) values(1, ,'Corte de pelo');
-insert into Mascota(Id_Mascota, Observaciones) values(2,'Corte de pelo');
-insert into Mascota(Id_Mascota, Observaciones) values(2, 'Corte de pelo');
-insert into Mascota(Id_Mascota, Observaciones) values(3,'Corte de pelo');
-insert into Mascota(Id_Mascota, Observaciones) values(5, 'Corte de pelo');
-insert into Mascota(Id_Mascota, Observaciones) values(10, 'Corte de pelo');
-insert into Mascota(Id_Mascota, Observaciones) values(3, 'Corte de pelo');
-insert into Mascota(Id_Mascota, Observaciones) values(2, 'Corte de pelo');
-insert into Mascota(Id_Mascota, Observaciones) values(4 'Corte de pelo');
-insert into Mascota(Id_Mascota, Observaciones) values(4, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(1,'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(2,'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(4, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(3,'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(5, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(10, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(3, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(2, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(4, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(6, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(9,'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(5, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(10, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(3, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(2, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(7, 'Corte de pelo');
+insert into Ingresos(Id_Mascota, Observaciones) values(9, 'Corte de pelo');
 
 
 
